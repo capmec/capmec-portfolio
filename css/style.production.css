@@ -30,10 +30,6 @@ body {
 }
 
 /* HEADERS */
-.personal-logo {
-	width: 10%;
-	height: 10%;
-}
 
 .heading_not_main_pages {
 	display: -webkit-box;
@@ -171,7 +167,6 @@ button:hover {
 /* NAVIGATION */
 .navigation_item {
 	font-family: 'Nunito', sans-serif;
-	padding: 8px;
 }
 
 .navigation-list_item--active {
@@ -179,11 +174,9 @@ button:hover {
 }
 
 .navigation-list {
+	display: inline-flex;
 	list-style-type: none;
-}
-
-.navigation-list li {
-	display: inline-block;
+	gap: 8px;
 }
 
 .article {
@@ -195,6 +188,7 @@ button:hover {
 }
 
 /* HOME */
+
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
@@ -247,7 +241,7 @@ button:hover {
 	}
 	.grid__item {
 		position: relative;
-		background-color: #d3d3d3;
+		background-color: #c0e0f0;
 		color: #2b2b2b;
 		width: auto;
 		min-height: auto;
@@ -256,6 +250,7 @@ button:hover {
 		-webkit-transition: 0.3s ease;
 		-o-transition: 0.3s ease;
 		transition: 0.3s ease;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	}
 	.grid__item:hover {
 		-webkit-transform: scale(1.05);
@@ -264,11 +259,10 @@ button:hover {
 		cursor: pointer;
 	}
 	.grid__item:last-child {
-		-ms-grid-column: 2;
 		grid-column-start: 2;
 		-ms-grid-column-span: -1;
 		grid-column-end: 1;
-		-ms-grid-row: 1;
+
 		grid-row-start: 1;
 		-ms-grid-row-span: 2;
 		grid-row-end: 3;
@@ -295,15 +289,14 @@ button:hover {
 .grid-message {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 32px;
 	margin: 0 24px 0;
-	background-color: #007dbb;
+
 	padding: 24px 32px;
 	border-radius: 12px;
 }
 .grid-message_item {
-	background-color: #f0f0f0;
 	padding: 20px;
 	border-radius: 12px;
 	display: flex;
@@ -364,7 +357,7 @@ textarea {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	height: 100vh;
+	height: 45vh;
 }
 
 @-webkit-keyframes color-change {
@@ -472,9 +465,27 @@ textarea {
 	h1 {
 		font-size: 22px;
 	}
+	.grid-message {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-gap: 16px;
+	}
+	.page-header {
+		display: block;
+		align-items: center;
+	}
+	.navigation-list {
+		display: flex;
+		justify-content: flex-end;
+		gap: 2px;
+	}
 }
 
 @media all and (min-width: 300px) and (max-width: 850px) {
+	.profile {
+		margin: 0 auto;
+		padding-top: 20px;
+	}
 	.grid {
 		-ms-grid-columns: 1fr 16px 1fr;
 		grid-template-columns: 1fr 1fr;
@@ -486,6 +497,24 @@ textarea {
 	}
 	h1 {
 		font-size: 22px;
+	}
+	.grid-message {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-gap: 16px;
+	}
+	.page-header {
+		display: block;
+		align-items: center;
+	}
+	.navigation-list {
+		display: flex;
+		justify-content: flex-end;
+		gap: 2px;
+	}
+	.svg-container {
+		height: fit-content;
+		width: fit-content;
 	}
 }
 

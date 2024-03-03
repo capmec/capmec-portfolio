@@ -49,37 +49,36 @@
 					role="menubar"
 					class="navigation-list">
 					<li role="presentation">
-						<a
-							href="index.html"
+						<button
+							onClick="location.href='index.html'"
 							role="menuitem"
-							class="navigation-list__item navigation-list__item--active">
-							<button class="button__secondary">Home</button>
-						</a>
+							class="navigation-list__item navigation-list__item--active button button__secondary">
+							Home
+						</button>
 					</li>
 					<li role="presentation">
-						<!-- <a> NEEDS TO BE CENTERED -->
-						<a
-							href="about.html"
+						<button
+							onClick="location.href='about.html'"
 							role="menuitem"
 							class="navigation-list__item">
-							<button>About</button>
-						</a>
+							About
+						</button>
 					</li>
 					<li role="presentation">
-						<a
-							href="work.html"
+						<button
+							onClick="location.href='work.html'"
 							role="menuitem"
-							class="navigation-list__item navigation-list__item--active"
-							><button class="button__secondary">Work</button></a
-						>
+							class="navigation-list__item navigation-list__item--active button__secondary">
+							Works
+						</button>
 					</li>
 					<li role="presentation">
-						<a
-							href="contact.html"
+						<button
+							onClick="location='contact.html'"
 							role="menuitem"
-							class="navigation-list__item">
-							<button class="button__secondary">Contact</button>
-						</a>
+							class="navigation-list__item button__secondary">
+							Contact
+						</button>
 					</li>
 				</ul>
 			</nav>
@@ -106,14 +105,12 @@
 			</div>
 
 			<div class="about-me">
-				<a
-					href="files/cv.pdf"
-					class="button"
-					download
-					><button>Download my CV</button></a
-				>
+				<button
+					onClick="window.open(href='files/Resume_ClaraPinheiro.pdf')"
+					class="button">
+					Download my CV
+				</button>
 			</div>
-			<br />
 
 			<div class="svg-container">
 				<svg
@@ -121,7 +118,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					class="berlin-illustration"
 					width="50%"
-					height="auto"
+					height="100%"
 					viewBox="0 0 700 505"
 					xmlns:xlink="http://www.w3.org/1999/xlink">
 					<defs>
@@ -1900,14 +1897,12 @@
 			</div>
 		</main>
 		<footer class="page-footer">
+			<p>Find me on</p>
 			<div class="social-media">
-				<p>Find me on</p>
 				<img
 					src="img/githublogo.svg"
 					alt="Github-Logo" />
-				<img
-					src="img/twittericon.svg"
-					alt="Twitter-Logo" />
+
 				<img
 					src="img/linkedinlogo.svg"
 					alt="LinkedIn-Logo" />

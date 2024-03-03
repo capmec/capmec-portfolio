@@ -276,8 +276,6 @@ button:hover {
 /* CONTACT */
 
 .robot-img {
-	width: 50%;
-	height: 50%;
 	padding: 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -294,15 +292,10 @@ button:hover {
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 32px;
-	margin: 0 24px 0;
-
-	padding: 24px 32px;
 	border-radius: 12px;
 }
 
 .grid-message_item {
-	padding: 20px;
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
@@ -494,7 +487,6 @@ textarea {
 	.grid {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		grid-gap: 16px;
 	}
 
 	.grid_item:last-child {
@@ -509,7 +501,6 @@ textarea {
 	.grid-message {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		grid-gap: 16px;
 	}
 
 	.navigation-list {
@@ -538,9 +529,8 @@ textarea {
 	}
 
 	.grid {
-		-ms-grid-columns: 1fr 16px 1fr;
+		-ms-grid-columns: 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 16px;
 	}
 
 	.grid_item:last-child {
@@ -555,7 +545,6 @@ textarea {
 	.grid-message {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		grid-gap: 16px;
 	}
 
 	.navigation-list {

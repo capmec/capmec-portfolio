@@ -216,6 +216,10 @@ button:hover {
 	align-items: center;
 }
 
+.title-detail {
+	color: #d34600;
+}
+
 .about-me p {
 	margin-bottom: 3%;
 }
@@ -551,6 +555,10 @@ textarea {
 		display: flex;
 		justify-content: flex-end;
 		gap: 2px;
+	}
+
+	.robot-img {
+		width: 180px;
 	}
 }
 

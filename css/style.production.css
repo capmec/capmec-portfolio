@@ -275,6 +275,9 @@ button:hover {
 		-ms-grid-row-span: 2;
 		grid-row-end: 3;
 	}
+	.grid__item img {
+		width: 100%;
+	}
 }
 
 /* CONTACT */
